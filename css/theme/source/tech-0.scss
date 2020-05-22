@@ -12,19 +12,21 @@
 // ---------------------------------------------
 
 // Include theme-specific fonts
-@import url("https://fonts.googleapis.com/css?family=News + Cycle:400, 700");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap");
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: "Lato", sans-serif;
+$mainFont: "Open Sans", sans-serif;
 $mainColor: #000;
-$headingFont: "News Cycle", Impact, sans-serif;
+$headingFont: "Fira Code", monospace;
 $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #fff;
+$backgroundColor: rgb(247, 250, 252);
 $linkColor: #00008b;
 $linkColorHover: lighten($linkColor, 20%);
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$mainFontSize: 30px;
 
 section.has-dark-background {
   &,
@@ -36,6 +38,33 @@ section.has-dark-background {
   h6 {
     color: #fff;
   }
+}
+
+h1 {
+  background: white;
+  border: 4px solid black;
+  text-transform: uppercase;
+}
+
+.reveal .slide-number {
+  position: absolute;
+  display: block;
+  right: 8px;
+  bottom: 8px;
+  z-index: 31;
+  font-family: "Fira Code", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  color: $mainColor;
+  border: 2px solid $mainColor;
+  background: transparent;
+  padding: 5px;
+}
+
+.reveal pre {
+  border: 2px solid $mainColor;
+  padding: 1em;
 }
 
 // Theme template ------------------------------

@@ -1,3 +1,5 @@
-# Schedule
+# Wat gaan we doen?
 
-This is the subtitle of the introduction slide.
+- Introductie van het vak
+- In-take toets
+- Onze eerste website maken
