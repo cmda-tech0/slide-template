@@ -16,12 +16,20 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown data-background-image="/images/introduction.jpg" 
-          data-background-size="100%" data-background-repeat="no-repeat">>
-          <textarea data-template>
-            # Introduction
-          </textarea>
-        </section>
+      <section data-markdown="templates/introduction.md"
+              data-separator="^\n\n\n"
+              data-separator-vertical="^\n\n"
+              data-separator-notes="^Note:"
+              data-charset="iso-8859-15"
+              data-background-image="/images/introduction.jpg" 
+              data-background-size="100%" data-background-repeat="no-repeat">
+      </section>
+      <section data-markdown="templates/introduction.md"
+        data-separator="^\n\n\n"
+        data-separator-vertical="^\n\n"
+        data-separator-notes="^Note:"
+        data-charset="iso-8859-15">
+      </section>
       </div>
     </div>
 
@@ -35,7 +43,11 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
+        transition: 'none',
+        backgroundTransition: 'none',
+        controls: false,
+        progress: false,
+        slideNumber: 'c/t',
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
       });
